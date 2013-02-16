@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <FrameLayout
+        android:id="@+id/flViewer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="80"
+        android:background="#EFE7DE" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:weightSum="100" >
+
+        <ImageView
+            android:id="@+id/imgLens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="50"
+            android:adjustViewBounds="true"
+            android:src="@drawable/lens" />
+
+        <LinearLayout
+            android:id="@+id/llDisplay2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="10" >
+
+            <TextView
+                android:id="@+id/tvColorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="ColorName"
+                android:paddingTop="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvHex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="Hex" />
+        </LinearLayout>
+
+        
+    </LinearLayout>
+
+</LinearLayout>
